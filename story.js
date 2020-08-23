@@ -60,7 +60,6 @@ else if(this.status==404){
     p.innerText="Stories : Empty"
 }
 
-
 }
 req.open("GET","https://boiling-taiga-54246.herokuapp.com/?u="+user,true);
 req.send();
