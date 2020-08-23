@@ -4,7 +4,6 @@ window.onload=function(){
     checks.addEventListener('keyup',function(e){if(e.keyCode===13){request(document.getElementById('user').value)}})
 }
 
-
 function getID(user){
     let id;
     var req=new XMLHttpRequest();
@@ -41,7 +40,7 @@ if(this.readyState==4&&this.status==200){
     p.innerText='Stories : '+lisurl.length
     for(var urlss of lisurl){
         if(urlss.includes(".jpg")){
-         bdy+="<div class=\"carousel-item\"><img class=\"img   rad d-block\" src="+urlss+"/></div>";
+         bdy+="<div class=\"carousel-item\"><img class=\"img rad d-block\" src="+urlss+"/></div>";
 
         }
         else{
